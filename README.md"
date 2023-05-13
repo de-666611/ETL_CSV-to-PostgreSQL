@@ -1,5 +1,5 @@
 # ETL_CSV-to-PostgreSQL
-"""Python
+```Python
 from sqlalchemy import create_engine
 import pyodbc
 import pandas as pd
@@ -12,4 +12,4 @@ table_name='real_estate_sales'
 csv_file_path='C:/Users/FACS/OneDrive/Documents/Germany/Python/Real_Estate_Sales_2001-2020_GL.csv'
 df_csv=pd.read_csv(csv_file_path)
 df_csv.to_sql(table_name,engine,if_exists='replace',index=False)
-"""
+```
